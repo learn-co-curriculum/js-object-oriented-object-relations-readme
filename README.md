@@ -28,7 +28,7 @@ Now let's say all of our users have many items they purchased.  We can represent
     }
   }
 
-  new Item(400)
+  new Item("red socks", 40)
 ```
 
 If we have a user, with multiple items we would want a way to associate items with a particular user.  To do so, first determine how an item is associated with a user.  There are two types of relationships for us to choose from:
