@@ -151,7 +151,7 @@ class Item {
     this.name = name
     this.price = price
     if(user){
-      this.userId = user.id
+      this.setUser(user)
     }
 
     // insert in the item to the store
@@ -169,7 +169,7 @@ store
 // {users: [{id: 1, name: 'Bobby'}], items: [{id: 1, name: 'trousers', price: 24, userId: 1}]}
 ```
 
-So from the code above, you can see that we can associate a item with a user either by passing through a item to a user upon initialization or by by calling a the `setUser` setter method that we wrote.  
+So from the code above, you can see that we can associate a item with a user either by passing through a item to a user upon initialization or by calling a the `setUser` setter method that we wrote.  
 
 ## Summary
 
