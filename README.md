@@ -33,10 +33,10 @@ Now let's say all of our users have many items they purchased.  We can represent
 
 If we have a user, with multiple items we would want a way to associate items with a particular user.  To do so, first determine how an item is associated with a user.  There are two types of relationships for us to choose from:
 
-1. Many to Many - that is, a item has many users, and a user has many items
-2. HasMany and BelongsTo - that is, a user has many items and a item belongs to a user.
+1. Many to Many - that is, an item has many users, and a user has many items
+2. HasMany and BelongsTo - that is, a user has many items and an item belongs to a user.
 
-Because a item can only be associated with one user (we are assuming that each item can only be owned by one user), we say that a item belongsTo a user and a user has many items.  This is very similar to our concept of associating data with sql.  If you are unfamiliar with how to associate data in sql, you can check it out [here](https://github.com/learn-co-curriculum/sql-table-relations-readme).
+Because an item can only be associated with one user (we are assuming that each item can only be owned by one user), we say that an item belongsTo a user and a user has many items.  This is very similar to our concept of associating data with sql.  If you are unfamiliar with how to associate data in sql, you can check it out [here](https://github.com/learn-co-curriculum/sql-table-relations-readme).
 
 So you could imagine representing the information in the following way:
 
@@ -140,7 +140,7 @@ class User {
 }
 ```
 
-Finally, let's allow the ability to associate a user with a item.
+Finally, let's allow the ability to associate a user with an item.
 
 ```js
 let itemId = 0
@@ -169,7 +169,7 @@ store
 // {users: [{id: 1, name: 'Bobby'}], items: [{id: 1, name: 'trousers', price: 24, userId: 1}]}
 ```
 
-So from the code above, you can see that we can associate a item with a user either by passing through a item to a user upon initialization or by calling a the `setUser` setter method that we wrote.  
+So from the code above, you can see that we can associate an item with a user either by passing through a item to a user upon initialization or by calling a the `setUser` setter method that we wrote.  
 
 ## Summary
 
