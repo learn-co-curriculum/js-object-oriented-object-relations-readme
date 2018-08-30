@@ -28,7 +28,7 @@ Now let's say all of our users have many items they purchased.  We can represent
     }
   }
 
-  new Item(400)
+  new Item("red socks", 40)
 ```
 
 If we have a user, with multiple items we would want a way to associate items with a particular user.  To do so, first determine how an item is associated with a user.  There are two types of relationships for us to choose from:
@@ -151,7 +151,7 @@ class Item {
     this.name = name
     this.price = price
     if(user){
-      this.userId = user.id
+      this.setUser(user)
     }
 
     // insert in the item to the store
@@ -169,7 +169,7 @@ store
 // {users: [{id: 1, name: 'Bobby'}], items: [{id: 1, name: 'trousers', price: 24, userId: 1}]}
 ```
 
-So from the code above, you can see that we can associate a item with a user either by passing through a item to a user upon initialization or by by calling a the `setUser` setter method that we wrote.  
+So from the code above, you can see that we can associate a item with a user either by passing through a item to a user upon initialization or by calling a the `setUser` setter method that we wrote.  
 
 ## Summary
 
