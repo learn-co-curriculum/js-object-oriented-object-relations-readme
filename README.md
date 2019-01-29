@@ -173,7 +173,7 @@ So from the code above, you can see that we can associate an item with a user ei
 
 ## Summary
 
-In this lesson, we saw how we can use a plain javascript object to store and associate our data.  We showed how we can assign each new instance an id by modifying our `constructor` method.  We also saw that we can write setters or modify our constructor methods to provide an interface to associate a two objects.     
+In this lesson, we saw how we can use a plain javascript object to store and associate our data.  We showed how we can assign each new instance an id by modifying our `constructor` method.  We also saw that we can write setters or modify our constructor methods to provide an interface to associate two objects.     
 
 ## Resources
 
