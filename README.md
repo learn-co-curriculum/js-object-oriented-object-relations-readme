@@ -4,7 +4,7 @@
 + Understand how to use associate objects with a store.
 + Understand how to use JavaScript methods to find associated objects.
 
-### Associating Objects
+## Associating Objects
 
 So far we have seen how to construct different types of objects in JavaScript with the class syntax.  
 
@@ -64,13 +64,13 @@ However, there is the potential that two users may have the same name, so name i
   ]}
 ```
 
-Let's try to see what's going on in the data structure above.  We assign a variable called `store` to a JavaScript object.  The `store` object will represent all of the objects that are initialized, and we will use it to store these objects.  The `store` object has two keys each of which points to an array: one to represent the collection of items and one to represent the collection of users.  
+Let's try to see what's going on in the data structure above.  We assign a variable called `store` to a JavaScript object.  The `store` object will represent all of the objects that are initialized, and we will use it to store these objects.  The `store` object has two keys, each of which points to an array: one to represent the collection of items and one to represent the collection of users.  
 
 Let's see if we can answer some questions with our data structured like this.  For example, if we want to see the name of the user that is associated with our first item, just take a look at the `userId` which is 1, and then go find the user with id 1, and see that the name is Cindy.  We can also go find all of the items associated with Cindy.  To do so, we see that its id is 1, and then find all of the items with a `userId` of 1: the first and second items.  
 
 So this is the structure we are aiming for.  How do we hook this up to our classes?
 
-### Linking Instances to a Store
+## Linking Instances to a Store
 
 1. Assign an id each time we make a new instance
 
