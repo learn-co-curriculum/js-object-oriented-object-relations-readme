@@ -31,7 +31,7 @@ Now let's say all of our users have many items they purchased.  We can represent
   new Item("red socks", 40)
 ```
 
-If we have a user, with multiple items we would want a way to associate items with a particular user.  To do so, first determine how an item is associated with a user.  There are two types of relationships for us to choose from:
+If we have a user with multiple items, we would want a way to associate those items with that user. To do so, first determine how an item is associated with a user.  There are two types of relationships for us to choose from:
 
 1. Many to Many - that is, an item has many users, and a user has many items
 2. HasMany and BelongsTo - that is, a user has many items and an item belongs to a user.
