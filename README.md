@@ -169,7 +169,7 @@ store
 // {users: [{id: 1, name: 'Bobby'}], items: [{id: 1, name: 'trousers', price: 24, userId: 1}]}
 ```
 
-So from the code above, you can see that we can associate an item with a user either by passing through a item to a user upon initialization or by calling a the `setUser` setter method that we wrote.  
+So from the code above, you can see that we can associate an item with a user either by passing through an item to a user upon initialization or by calling a the `setUser` setter method that we wrote.  
 
 ## Summary
 
